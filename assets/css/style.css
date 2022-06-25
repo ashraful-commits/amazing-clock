@@ -1,0 +1,111 @@
+body{
+    background-color: black;
+}
+/* .clock{
+    padding-bottom: 0;
+} */
+
+.container{
+    margin-top: 200px;
+}
+
+
+
+svg{
+    transform: rotate(-90deg);
+    position:relative;
+    
+   
+}
+
+svg circle:nth-child(2){
+    position: relative;
+    stroke-width: 5;
+    stroke-dasharray: 440;   
+    stroke-width: 7;
+    fill: transparent;
+    box-shadow: 0 0 .3rem #f7f7f7f7,0 0 .6rem #f9f9f9,0 0 1rem #fff7fa;
+
+}
+svg circle:nth-child(1){
+    position: relative;
+    stroke: rgb(253, 253, 253);
+    opacity: .1;
+    stroke-width: 5;
+    fill: transparent;
+    stroke-width: 5;
+    
+}
+.dots::before{
+
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    border-radius: 50px;
+       
+} 
+.doted{
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+.doted::before{
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 20px;
+    z-index: 100;
+    border-radius: 50px;
+       
+}
+.dot_hour::before{
+    background-color:#ff0055;
+    left: 14%;
+    top: 10%;
+    box-shadow: 0 0 .3rem #f50052f7,0 0 .6rem #fd0256,0 0 1rem #f72269;
+
+            
+}
+.dot_munite::before{
+    background-color:#00ffff;
+    box-shadow: 0 0 .3rem #00ffff,0 0 .6rem #00ffff,0 0 1rem #00ffff;
+    left: 41%;
+    top: 9%;
+}
+.dot_second::before{
+    left: 41%;
+    top: 1%;
+    box-shadow: 0 0 .3rem #ffbf00,0 0 .6rem #ffbf00,0 0 1rem #ffbf00;
+
+    background-color: #ffbf00;
+}
+
+
+.dots_hour_round::before{
+    left: 39%; 
+    top: -24%;
+    background-color:#ff0055;
+    box-shadow: 0 0 .3rem #f50052f7,0 0 .6rem #fd0256,0 0 1rem #f72269;
+    transform-origin: top left;
+            
+}
+.dots_munite_round::before{
+    left: 39%;
+    top: -24%;
+    background-color:#00ffff;
+    box-shadow: 0 0 .3rem #00ffff,0 0 .6rem #00ffff,0 0 1rem #00ffff;
+    transform-origin:top left;
+    
+}
+.dots_second_round::before{
+    
+    
+    left:34%;
+    top: -24%;
+    box-shadow: 0 0 .3rem #ffbf00,0 0 .6rem #ffbf00,0 0 1rem #ffbf00;
+    background-color: #ffbf00;
+    transform-origin:top left;
+    
+}
